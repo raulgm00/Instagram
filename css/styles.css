@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: max-content 1fr min-content;
+}
+
+header {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+  align-items: center;
+}
+header input {
+  display: none;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  width: 300px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+}
+main .first-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .first-section .friends {
+  display: flex;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  justify-content: space-around;
+  padding: 15px;
+  max-width: 400px;
+  width: 100%;
+}
+main .first-section .friends img {
+  padding: 5px;
+}
+main .first-section .post {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 100%;
+}
+main .first-section .post .post--header {
+  display: flex;
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  align-items: center;
+  justify-content: space-between;
+}
+main .first-section .post .post--header .post--header--profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+main .first-section .post .post--header strong {
+  font-size: 1.5rem;
+}
+main .first-section .post .post--photo {
+  padding: 15px;
+}
+main .first-section .post .post--photo img {
+  width: 100%;
+}
+main .first-section .post .post--icons {
+  display: flex;
+  gap: 10px;
+  padding: 0px 15px;
+}
+main .first-section .post .post--description {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 15px;
+}
+main .first-section .post .post--description p {
+  font-size: 0.8rem;
+}
+main .first-section .post .post--description a {
+  text-decoration: none;
+  color: gainsboro;
+}
+main .second-section {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  width: 250px;
+}
+main .second-section .recomendations-item,
+main .second-section .my-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+main .second-section .recomendations-item .profile,
+main .second-section .my-profile .profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .second-section .recomendations-item a,
+main .second-section .my-profile a {
+  text-decoration: none;
+  color: #1CA0F6;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 5px;
+}
+
+@media (min-width: 600px) {
+  header input {
+    display: block;
+  }
+  main {
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  main .second-section {
+    display: flex;
+  }
+}/*# sourceMappingURL=styles.css.map */
